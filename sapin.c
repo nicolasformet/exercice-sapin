@@ -7,6 +7,7 @@ void my_putchar(char c)
    write(1,&c,1);
 }
 
+// savoir si pair ou impaire pour décalage//
 int base(int size);int nb_espace(int base);int pair(int size)
 {
    int pair;
@@ -19,6 +20,7 @@ int base(int size);int nb_espace(int base);int pair(int size)
    return pair;
 }
 
+//calculer le nombre de ligne pour triangle//
 int nb_ligne(int size)
 {
    int i = size;
@@ -31,6 +33,7 @@ int nb_ligne(int size)
    return nb_ligne;
 }
 
+//correction Rian//
 int etoile(int size)
 {
     int i = 0;  // compteur d'étages
@@ -61,6 +64,7 @@ int etoile(int size)
     return (etoiles);
 }
 
+//Calculer le pied du sapin//
 void pied(int size)
 {
    int base = etoile(size);
@@ -90,6 +94,7 @@ void pied(int size)
    i++;
    }
 }
+
 
 void sapin(int size)
 {

@@ -33,7 +33,6 @@ int nb_ligne(int size)
    return nb_ligne;
 }
 
-//correction Rian//
 int etoile(int size)
 {
     int i = 0;  // compteur d'étages
@@ -60,7 +59,7 @@ int etoile(int size)
         l = 0;
         i++;
     }
-    etoiles += 1;
+    etoiles += 1; //pour corriger décalage d'étoile//
     return (etoiles);
 }
 
@@ -143,43 +142,6 @@ void sapin(int size)
 }
 
 
-
-
-/*
-
-void my_putchar(char c)
-{
-  write(1, &c,  1);
-}
-
-void sapin (int size)
-{
- int nbl = size * 4;
-   int j = 0;
-   int nbe = 1;
-   int base = 7;
-   int nb_espace = (base -1)/2;
-   while (j < nbl)
-   {
-       int k = 0;
-       int l = 0;
-       while (l < nb_espace)
-           {
-               my_putchar(' ');
-               l++;
-           }
-       while (k < nbe)
-           {
-               my_putchar('*');
-               k++;
-           }
-       my_putchar('\n');
-       nbe = nbe + 2;
-       nb_espace = nb_espace - 1;
-       j++;
-   }
-}
-*/
 int main(int argc, char **argv)
 
 {
@@ -191,7 +153,7 @@ int main(int argc, char **argv)
 
   {
 
-    printf("Need a size in argument.\n");
+    printf("Précisez la taille s'il vous plait.\n");
 
     return (0);
 
@@ -203,3 +165,5 @@ int main(int argc, char **argv)
   
 
 }
+
+
